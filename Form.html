@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Post a Job | Heyring</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Post a Job</h2>
+        <form action="#" method="post" class="job-post-form">
+            <div class="form-group">
+                <label for="company-name">Company Name</label>
+                <input type="text" id="company-name" name="company-name" placeholder="Enter your company name" required>
+            </div>
+            <div class="form-group">
+                <label for="job-title">Job Title</label>
+                <input type="text" id="job-title" name="job-title" placeholder="Enter job title" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Job location" required>
+            </div>
+            <div class="form-group">
+                <label for="job-type">Job Type</label>
+                <select id="job-type" name="job-type" required>
+                    <option value="full-time">Full-Time</option>
+                    <option value="part-time">Part-Time</option>
+                    <option value="internship">Internship</option>
+                    <option value="freelance">Freelance</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Job Description</label>
+                <textarea id="description" name="description" rows="5" placeholder="Describe the job" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="salary">Salary</label>
+                <input type="number" id="salary" name="salary" placeholder="Enter salary range (optional)">
+            </div>
+            <div class="form-group">
+                <label for="apply-link">Apply Link/Email</label>
+                <input type="url" id="apply-link" name="apply-link" placeholder="Link to apply or email address" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Post Job</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
